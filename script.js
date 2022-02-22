@@ -50,10 +50,10 @@ function iterate(id) {
     question.innerText = Questions[id].q;
   
     // Getting the options
-    const op1 = document.getElementById('op1');
-    const op2 = document.getElementById('op2');
-    const op3 = document.getElementById('op3');
-    const op4 = document.getElementById('op4');
+    const op1 = document.getElementById('ans1');
+    const op2 = document.getElementById('ans2');
+    const op3 = document.getElementById('ans3');
+    const op4 = document.getElementById('ans4');
   
   
     // Providing option text 
@@ -72,42 +72,42 @@ function iterate(id) {
   
     // Show selection for op1
     op1.addEventListener("click", () => {
-        op1.style.backgroundColor = "lightgoldenrodyellow";
-        op2.style.backgroundColor = "lightskyblue";
-        op3.style.backgroundColor = "lightskyblue";
-        op4.style.backgroundColor = "lightskyblue";
+        op1.style.backgroundColor = "gold";
+        op2.style.backgroundColor = "green";
+        op3.style.backgroundColor = "green";
+        op4.style.backgroundColor = "green";
         selected = op1.value;
     })
   
     // Show selection for op2
     op2.addEventListener("click", () => {
-        op1.style.backgroundColor = "lightskyblue";
-        op2.style.backgroundColor = "lightgoldenrodyellow";
-        op3.style.backgroundColor = "lightskyblue";
-        op4.style.backgroundColor = "lightskyblue";
+        op1.style.backgroundColor = "green";
+        op2.style.backgroundColor = "gold";
+        op3.style.backgroundColor = "green";
+        op4.style.backgroundColor = "green";
         selected = op2.value;
     })
   
     // Show selection for op3
     op3.addEventListener("click", () => {
-        op1.style.backgroundColor = "lightskyblue";
-        op2.style.backgroundColor = "lightskyblue";
-        op3.style.backgroundColor = "lightgoldenrodyellow";
-        op4.style.backgroundColor = "lightskyblue";
+        op1.style.backgroundColor = "green";
+        op2.style.backgroundColor = "green";
+        op3.style.backgroundColor = "gold";
+        op4.style.backgroundColor = "green";
         selected = op3.value;
     })
   
     // Show selection for op4
     op4.addEventListener("click", () => {
-        op1.style.backgroundColor = "lightskyblue";
-        op2.style.backgroundColor = "lightskyblue";
-        op3.style.backgroundColor = "lightskyblue";
-        op4.style.backgroundColor = "lightgoldenrodyellow";
+        op1.style.backgroundColor = "green";
+        op2.style.backgroundColor = "green";
+        op3.style.backgroundColor = "green";
+        op4.style.backgroundColor = "gold";
         selected = op4.value;
     })
   
     // Grabbing the evaluate button
-    const evaluate = document.getElementsByClassName("evaluate");
+    const evaluate = document.getElementsByClassName("check");
   
     // Evaluate method
     evaluate[0].addEventListener("click", () => {
